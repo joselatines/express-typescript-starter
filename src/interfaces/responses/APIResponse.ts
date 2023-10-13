@@ -1,5 +1,6 @@
 export default interface APIResponse {
   success: boolean;
   message: string;
-  data: any;
+  data?: any;
+  error?: Error | unknown
 }
